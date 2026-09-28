@@ -8,6 +8,24 @@ import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        var pytanie = listOf(
+            "Który z wymienionych języków jest jezykiem obiektowym?",
+            "ile kot ma łap?",
+            "dokąd nocą tupta jeż")
+        var pytania = listOf(
+            "java",
+            "python",
+            "html",
+            "1",
+            "2",
+            "4",
+            "Do domu",
+            "Do lasu",
+            "Do nory"
+        )
+        var odpowiedzi = listOf(
+            0,2,1
+        )
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)

@@ -12,9 +12,8 @@
 
     <TextView
         android:id="@+id/Quiz"
-        android:layout_width="424dp"
-        android:layout_height="63dp"
-        android:layout_marginTop="4dp"
+        android:layout_width="403dp"
+        android:layout_height="56dp"
         android:background="#ED95BE"
         android:text="Quiz"
         android:textColor="#0A0AE0"
@@ -22,17 +21,69 @@
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="-7dp" />
+        tools:layout_editor_absoluteX="-4dp" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="402dp"
-        android:layout_height="58dp"
-        android:layout_marginTop="84dp"
+        android:id="@+id/pytanieView"
+        android:layout_width="419dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="76dp"
         android:text="Pytanie 1/3"
         android:textAlignment="center"
         android:textColor="#020202"
         android:textSize="24sp"
         app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-10dp" />
+
+    <TextView
+        android:id="@+id/pytanieTextView"
+        android:layout_width="411dp"
+        android:layout_height="136dp"
+        android:layout_marginTop="112dp"
+        android:text="Który z wymienionych języków jest jezykiem obiektowym?"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-10dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="415dp"
+        android:layout_height="153dp"
+        android:layout_marginTop="248dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="-11dp">
+
+        <RadioButton
+            android:id="@+id/odp1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="A) Html" />
+
+        <RadioButton
+            android:id="@+id/odp2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="B) Kotlin" />
+
+        <RadioButton
+            android:id="@+id/odp3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="C) Sql" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="396dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="156dp"
+        android:backgroundTint="#1976D2"
+        android:text="Dalej"
+        android:textSize="34sp"
+        app:cornerRadius="70px"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
         tools:layout_editor_absoluteX="-3dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
